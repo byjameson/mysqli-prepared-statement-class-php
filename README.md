@@ -6,27 +6,52 @@ Examples
  /*
  EXAMPLES
 
- //SELECT WITHOUT MYSQLI PING
+ SELECT WITHOUT MYSQLI PING
+ 
  $connection->ss("SELECT * FROM myTable WHERE name = ? AND age = ?", "si", array($name,$age));
- //SELECT WITH MYSQLI PING
+ 
+ SELECT WITH MYSQLI PING
+ 
  $connection->ss("SELECT * FROM myTable WHERE name = ? AND age = ?", "si", array($name,$age), 1);
 
- //INSERT WITHOUT MYSQLI PING
+
+
+
+ INSERT WITHOUT MYSQLI PING
+ 
  $connection->ss("INSERT INTO myTable (name, age) VALUES (?, ?)", "si", array($name,$age));
- //INSERT WITH MYSQLI PING
+ 
+ INSERT WITH MYSQLI PING
+ 
  $connection->ss("INSERT INTO myTable (name, age) VALUES (?, ?)", "si", array($name,$age), 1);
 
- //UPDATE WITHOUT MYSQLI PING
+
+
+
+ UPDATE WITHOUT MYSQLI PING
+ 
  $connection->ss("UPDATE myTable SET name = ? WHERE id = ?", "si", array($name,$age));
- //UPDATE WITH MYSQLI PING
+ 
+ UPDATE WITH MYSQLI PING
+ 
  $connection->ss("UPDATE myTable SET name = ? WHERE id = ?", "si", array($name,$age), 1);
 
- //DELETE WITHOUT MYSQLI PING
+
+
+
+ DELETE WITHOUT MYSQLI PING
+ 
  $connection->ss("DELETE FROM myTable WHERE id = ?", "si", array($name,$age));
- //DELETE WITH MYSQLI PING
+ 
+ DELETE WITH MYSQLI PING
+ 
  $connection->ss("DELETE FROM myTable WHERE id = ?", "si", array($name,$age), 1);
 
- //without parameter select
+ 
+ 
+ 
+ without parameter select
+ 
  $query = $connection->connect(0)->query("SELECT * From denemetry order by id desc");
 
  
