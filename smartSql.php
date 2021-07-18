@@ -34,6 +34,6 @@
 
  }
 
-$connect = new smartSql('root', 'pass', 'database_username');
+$connection = new smartSql('root', 'pass', 'database_username');
 
 
