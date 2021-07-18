@@ -3,7 +3,7 @@ This is mysqli class for php language. You can make everything with this mysqli 
 
 Connection inside code.
 
-$connect = new smartSql('root', 'pass', 'database_username');
+$connection = new smartSql('root', 'pass', 'database_username');
 
 
 Examples
