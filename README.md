@@ -8,7 +8,7 @@ $connection = new smartSql('root', 'pass', 'database_username');
 
 Examples
 
- /*
+ 
  EXAMPLES
 
  SELECT WITHOUT MYSQLI PING
@@ -64,4 +64,3 @@ Examples
  echo $data[0];
  }
 
- */
