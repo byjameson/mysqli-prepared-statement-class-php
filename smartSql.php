@@ -11,8 +11,13 @@
  		}
  		public function connect($tryConnect) {
        if($tryConnect==true and !mysqli_ping($this->connection)){
- 			$this->connection = new mysqli($this->host, $this->user, $this->password, $this->database);
-       $this->connection -> set_charset($charset);
+       for(;;){
+       $con = $this->connection = new mysqli($this->host, $this->user, $this->password, $this->database);
+       if($con==true)
+       break;
+       sleep(1);
+        }
+        $this->connection -> set_charset($charset);
        }
        return $this->connection;
  		}
